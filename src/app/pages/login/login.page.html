@@ -1,0 +1,22 @@
+<ion-content fullscreen>
+
+  <img class="image" src="/assets/icon/chat.png">
+
+  <form [formGroup]="loginForm">
+    <ion-list>
+      <p class="label"> Email:</p>
+      <ion-item lines="none">
+        <ion-input class="input" formControlName="email" clear-input="true" type="email" placeholder="your Email">
+        </ion-input>
+      </ion-item>
+      <p class="label"> Password:</p>
+      <ion-item lines="none">
+        <ion-input class="input" formControlName="password" clear-input="true" type="password"
+          placeholder="Your Password"></ion-input>
+      </ion-item>
+    </ion-list>
+  </form>
+  <ion-button class="buttonstyle" (click)="sigin()" [disabled]="!loginForm.valid" shape="round" color="warning">Sign In
+  </ion-button>
+  <ion-button class="otherbottonstyle" routerLink="/register" fill="clear">Create an Account ?</ion-button>
+</ion-content>

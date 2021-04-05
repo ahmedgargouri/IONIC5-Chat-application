@@ -1,0 +1,29 @@
+<img class="image" src="/assets/icon/register.png">
+
+<ion-content>
+
+  <form [formGroup]="registerForm">
+
+    <ion-list>
+      <p class="label"> Display Name:</p>
+      <ion-item lines="none">
+        <ion-input class="inputstyle" formControlName="name" type="text" clear-input="true"
+          placeholder="Display Name..."></ion-input>
+      </ion-item>
+      <p class="label"> Email:</p>
+      <ion-item lines="none">
+        <ion-input class="inputstyle" formControlName="email" type="email" clear-input="true" placeholder="Email...">
+        </ion-input>
+      </ion-item>
+      <p class="label"> Password:</p>
+      <ion-item lines="none">
+        <ion-input class="inputstyle" formControlName="password" type="password" placeholder="Password..."></ion-input>
+      </ion-item>
+    </ion-list>
+
+  </form>
+
+  <ion-button class="buttonstyle" (click)="createAccount()" color="warning" shape="round">Create</ion-button>
+  <ion-button class="otherbottonstyle" routerLink="/login" fill="clear"> Login </ion-button>
+
+</ion-content>

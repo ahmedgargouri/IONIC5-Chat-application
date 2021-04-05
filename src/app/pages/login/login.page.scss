@@ -1,0 +1,45 @@
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 166px;
+    margin-top: 5px;
+}
+.input{
+    background: linear-gradient(#ffb841 0%, #ff9113 100%);
+    border-radius: 10px;
+    margin-top: 14px;
+    margin-bottom: 17px;
+}
+
+.label{
+    margin-left: 10px;
+    color: #066d06;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.buttonstyle{
+    bottom: 58px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    }
+    .otherbottonstyle{
+        bottom: 5px;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        color: #ab6f28;
+    }
